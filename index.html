@@ -591,9 +591,9 @@ body.has-sb .wafab{bottom:calc(var(--tabbar-h) + env(safe-area-inset-bottom,0px)
      logos:{ singer:'data:image/png;base64,...', brother:'...', dinnek:'...', zoje:'...' } };
    El catálogo se lee de la vista pública "catalogo_publico" (sin costos). Los datos del formulario NO se guardan en la base. */
 const CFG = Object.assign({
-  supabaseUrl: '', anonKey: '',
+  supabaseUrl: 'https://xizbovcpjhfopaoratec.supabase.co', anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhpemJvdmNwamhmb3Bhb3JhdGVjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIxNjM0NTYsImV4cCI6MjEwNzczOTQ1Nn0.8FjnA2CR9GxlGeOUJaG35fkMosF2kDzTTHDowsTLkP4',
   whatsapp: '9331584562',
-  mapaEmbebido: false,           // true en el sitio publicado para mostrar el mapa de Google dentro de la página
+  mapaEmbebido: true,           // true en el sitio publicado para mostrar el mapa de Google dentro de la página
   logos: {}                      // logos oficiales de marcas (data: URI) cuando se tengan los archivos
 }, window.TALLERCITO_SITE || {});
 
