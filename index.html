@@ -1,5 +1,11 @@
 <title>El Tallercito</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<script>
+  window.TALLERCITO_SITE = {
+    supabaseUrl: "https://xizbovcpjhfopaoratec.supabase.co",
+    anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhpemJvdmNwamhmb3Bhb3JhdGVjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIxNjM0NTYsImV4cCI6MjEwNzczOTQ1Nn0.8FjnA2CR9GxlGeOUJaG35fkMosF2kDzTTHDowsTLkP4",
+    whatsapp: "9331584562"
+  };
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,600;0,6..96,700;1,6..96,500;1,6..96,600&display=swap" rel="stylesheet">
 <style>
 /* Layout: encabezado azul profundo + barra de pestañas blanca con línea dorada fina + franja de ruta (como Brother); portada blanca con foto en corte diagonal; tarjetas blancas con filete; rojo para acciones, azul para estructura, negro para texto y pie; dorado solo en líneas finas. */
@@ -848,7 +854,7 @@ function renderContact() {
 }
 function renderLoc() {
   $('#lnk-dir').href = LINKS.dir; $('#lnk-maps').href = LINKS.maps;
-  if (CFG.mapaEmbebido) {
+  if (CFG.mapaEmbebido: true) {
     const mc = $('#mapcard'); mc.style.padding = '10px'; mc.style.minHeight = '0';
     mc.innerHTML = '<iframe class="mapframe" title="Mapa de El Tallercito en Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="' + LINKS.embed + '"></iframe><div class="hero-cta" style="padding:6px"><a class="btn red" href="' + LINKS.dir + '" target="_blank" rel="noopener">' + ico('pin') + 'Cómo llegar</a><a class="btn ghost" href="' + LINKS.maps + '" target="_blank" rel="noopener">' + ico('ext') + 'Abrir en Google Maps</a></div>';
   }
